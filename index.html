@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Satyam Kumar | Web Developer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+/* Background Image */
+body{
+    background: url("bg.jpg") no-repeat center center/cover;
+    position:relative;
+    color:white;
+}
+
+/* Dark overlay */
+body::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.7);
+    z-index:-1;
+}
+
+/* Header */
+header{
+    padding:60px 20px;
+    text-align:center;
+    animation:fadeIn 1.5s ease-in;
+}
+
+header img{
+    width:160px;
+    height:160px;
+    border-radius:50%;
+    border:4px solid #00c6ff;
+    margin-bottom:15px;
+}
+
+/* Section */
+section{
+    padding:40px 20px;
+}
+
+/* Glass Cards */
+.card{
+    max-width:700px;
+    margin:25px auto;
+    padding:30px;
+    border-radius:20px;
+    backdrop-filter:blur(10px);
+    background:rgba(255,255,255,0.1);
+    border:1px solid rgba(255,255,255,0.2);
+    box-shadow:0 8px 25px rgba(0,0,0,0.4);
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 12px 35px rgba(0,0,0,0.6);
+}
+
+/* Section Titles */
+.card h2{
+    margin-bottom:15px;
+    font-size:26px;
+    color:#00c6ff;
+}
+
+/* Paragraph Styling */
+.card p{
+    margin:8px 0;
+    font-size:16px;
+    line-height:1.6;
+}
+
+/* Buttons */
+.btn{
+    display:inline-block;
+    padding:10px 22px;
+    margin:10px;
+    border-radius:30px;
+    background:linear-gradient(45deg,#00c6ff,#0072ff);
+    color:white;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:scale(1.1);
+}
+
+/* Footer */
+footer{
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+    background:rgba(0,0,0,0.8);
+}
+
+/* Animation */
+@keyframes fadeIn{
+    from{opacity:0; transform:translateY(-20px);}
+    to{opacity:1; transform:translateY(0);}
+}
+
+/* Responsive */
+@media(max-width:768px){
+    .card{
+        margin:15px;
+        padding:20px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<img src="/profile.jpg" alt="Satyam Kumar">
+<h1>Satyam Kumar</h1>
+<p>Diploma CSE Student | HTML Developer | Future Software Engineer</p>
+<a href="/Satyam_Kumar_Resume_ATS.pdf" class="btn" download>Download Resume</a>
+</header>
+
+<section>
+
+<div class="card">
+<h2>About Me</h2>
+<p>I am a passionate Diploma CSE student skilled in HTML, CSS, and C Programming. 
+I am actively seeking internship and web development opportunities.</p>
+</div>
+
+<div class="card">
+<h2>Skills</h2>
+<p>✔ HTML</p>
+<p>✔ CSS</p>
+<p>✔ C Programming</p>
+<p>✔ Git & GitHub</p>
+</div>
+
+<div class="card">
+<h2>Projects</h2>
+<p>🔹 Personal Portfolio Website</p>
+<p>🔹 Calculator in C</p>
+<p>🔹 Responsive Landing Page</p>
+</div>
+
+<div class="card">
+<h2>Contact</h2>
+<p>Email: satyam7209452235@gmail.com</p>
+<a href="https://www.linkedin.com/in/satyamkumar74" class="btn" target="_blank">LinkedIn</a>
+<a href="https://github.com/satyamkumar-crypto" class="btn" target="_blank">GitHub</a>
+</div>
+
+</section>
+
+<footer>
+© 2026 Satyam Kumar | All Rights Reserved
+</footer>
+
+</body>
+</html>
